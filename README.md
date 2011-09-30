@@ -20,7 +20,7 @@ If you want to specify what colors do you want to use with, give a 2nd parameter
 
     $this->ci_colorizer->colorize('..your text here..', 'Green, Blue, Maroon');
 
-List of offical [HTML color names]{http://www.w3schools.com/html/html_colornames.asp} 
+List of offical [HTML color names]{http://www.w3schools.com/html/html_colornames.asp/} 
 
 ## Notes
 
