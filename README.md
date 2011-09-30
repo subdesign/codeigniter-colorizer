@@ -2,8 +2,6 @@
 
 Simply fun library for colorizing text input. This is a raw version, further functionalities planned.
 
----
-
 ## Usage
 
 First, put the Ci_colorizer.php into you application/libraries folder
