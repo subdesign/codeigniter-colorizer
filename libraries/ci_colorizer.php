@@ -15,6 +15,7 @@
 class Ci_colorizer
 {
 	private $text;
+	private $text_array = array();
 	private $colors = array();
 	private $constant_colors = array('Aqua', 'Black', 'Blue', 'Brown', 'Cyan', 'Gold', 'Gray', 'Green', 'Lime', 'Magenta', 'Navy', 'Orange', 'Orchid', 'Purple', 'Red', 'Silver', 'Violet', 'Yellow');
 
@@ -22,7 +23,7 @@ class Ci_colorizer
 	{
 		$this->text = $text;
 		
-		$text_array = explode(" ", $this->text);
+		$this->text_array = explode(" ", $this->text);
 		
 		if(strlen($colors)) 
 		{
@@ -34,16 +35,16 @@ class Ci_colorizer
 		
 		if(count($this->colors) > 0)
 		{
-			for($i = 0; $i < count($text_array); $i++)
+			for($i = 0; $i < count($this->text_array); $i++)
 			{
-				$result .= '<span style="color:'.$this->colors[array_rand($this->colors, 1)].'">'.$text_array[$i].' </span>';
+				$result .= '<span style="color:'.$this->colors[array_rand($this->colors, 1)].'">'.$this->text_array[$i].' </span>';
 			}
 		}
 		else
 		{
-			for($i = 0; $i < count($text_array); $i++)
+			for($i = 0; $i < count($this->text_array); $i++)
 			{
-				$result .= '<span style="color:'.$this->constant_colors[array_rand($this->constant_colors, 1)].'">'.$text_array[$i].' </span>';
+				$result .= '<span style="color:'.$this->constant_colors[array_rand($this->constant_colors, 1)].'">'.$this->text_array[$i].' </span>';
 			}
 		}
 		
