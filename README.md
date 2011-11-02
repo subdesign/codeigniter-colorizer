@@ -22,4 +22,4 @@ List of offical [HTML color names](http://www.w3schools.com/html/html_colornames
 
 ## Notes
 
-*    You can extend the $constant_colos array with more HTML color names
+*    You can extend the $constant_colos array with more HTML color names.
